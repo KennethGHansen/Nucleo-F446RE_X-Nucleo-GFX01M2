@@ -30,8 +30,12 @@ instead. The wiring is done on basis of the port setup i did in CubeMX:
 
 <img width="622" height="616" alt="image" src="https://github.com/user-attachments/assets/26855a65-70c8-4925-b4c8-d13d40b08085" />
 
-NUCLEO-F446RE                    X-NUCLEO-GFX01M2          FUNCTION
-PA1(GPIO_OUT)   - CN7_30         CN2_30                    Display reset
+| NUCLEO-F446RE | X-NUCLEO-GFX01M2 | FUNCTION |
+|---------------|------------------|----------|
+
+| PA1(GPIO_OUT) - CN7_30 | CN2_30 | Display reset |
+
+
 PB5(GPIO_OUT)   - CN10_29        CN3_25                    Display SPI write enable
 PA4(GPIO_OUT)   - CN7_32         CN3_21                    Display SPI chip select active high
 PA5(SPI1_CLK)   - CN10_11        CN3_11                    Display SPI serial clock
@@ -40,6 +44,14 @@ PA7(SPI1_MOSI)  - CN10_15        CN3_15                    Display SPI master ou
 VDD(3V3)        - CN7_5          CN2_16                    X-NUCLEO-GFX01M2 board supply
 GND             - CN7_8          CN2_4                     GROUND
 
+| Function | Signal | MCU Pin | Notes |
+|----------|--------|----------|-------|
+| LCD Reset | DISP_NRESET | PA8 | Active‑low |
+| Data/Command | DISP_DCX | PB5 | GPIO |
+| Chip Select | DISP_NCS | PA4 | GPIO |
+| SPI Clock | DISP_SCL | PA5 | SPI1_SCK |
+| SPI MOSI | DISP_SDA | PA7 | SPI1_MOSI |
+| SPI MISO | DISP_SDO | PA6 | Optional |
 
 GPIO setup:
 PA1 - PB5 - HIGH (PP)
@@ -151,6 +163,7 @@ Thanks to the ST community, the X‑NUCLEO‑GFX01M2 hardware documentation,
 and the open‑source embedded graphics community
 
 ---
+
 
 
 
