@@ -30,28 +30,16 @@ instead. The wiring is done on basis of the port setup i did in CubeMX:
 
 <img width="622" height="616" alt="image" src="https://github.com/user-attachments/assets/26855a65-70c8-4925-b4c8-d13d40b08085" />
 
-| NUCLEO-F446RE | X-NUCLEO-GFX01M2 | FUNCTION |
-|---------------|------------------|----------|
-
-| PA1(GPIO_OUT) - CN7_30 | CN2_30 | Display reset |
-
-
-PB5(GPIO_OUT)   - CN10_29        CN3_25                    Display SPI write enable
-PA4(GPIO_OUT)   - CN7_32         CN3_21                    Display SPI chip select active high
-PA5(SPI1_CLK)   - CN10_11        CN3_11                    Display SPI serial clock
-PA6(SPI1_MISO)  - CN10_13        CN3_13                    Display SPI master in/slave out (Optional)
-PA7(SPI1_MOSI)  - CN10_15        CN3_15                    Display SPI master out/slave in
-VDD(3V3)        - CN7_5          CN2_16                    X-NUCLEO-GFX01M2 board supply
-GND             - CN7_8          CN2_4                     GROUND
-
-| Function | Signal | MCU Pin | Notes |
-|----------|--------|----------|-------|
-| LCD Reset | DISP_NRESET | PA8 | Active‑low |
-| Data/Command | DISP_DCX | PB5 | GPIO |
-| Chip Select | DISP_NCS | PA4 | GPIO |
-| SPI Clock | DISP_SCL | PA5 | SPI1_SCK |
-| SPI MOSI | DISP_SDA | PA7 | SPI1_MOSI |
-| SPI MISO | DISP_SDO | PA6 | Optional |
+| NUCLEO-F446RE           | X-NUCLEO-GFX01M2 | FUNCTION                                   |
+|-------------------------|------------------|--------------------------------------------|
+| PA1(GPIO_OUT) - CN7_30  | CN2_30           | Display reset                              |
+| PB5(GPIO_OUT) - CN10_29 | CN3_25           | Display SPI write enable                   |
+| PA4(GPIO_OUT) - CN7_32  | CN3_21           | Display SPI chip select active high        |
+| PA5(SPI1_CLK) - CN10_11 | CN3_11           | Display SPI serial clock                   |
+| PA6(SPI1_MISO)- CN10_13 | CN3_13           | Display SPI master in/slave out (Optional) |
+| PA7(SPI1_MOSI)- CN10_15 | CN3_15           | Display SPI master out/slave in            |
+| VDD(3V3)      - CN7_5   | CN2_16           | X-NUCLEO-GFX01M2 board supply              |
+| GND           - CN7_8   | CN2_4            | GROUND                                     |
 
 GPIO setup:
 PA1 - PB5 - HIGH (PP)
@@ -79,6 +67,7 @@ Full Duplex Master - Motorola, 8 bit, MSB first, 45 MBps, CPOL-Low, CPHA-1 Edge
 ---
 
 ## Project Structure
+```
 X-Nucleo-GFX01M2/
 ├── Core/
 │   ├── Inc/
@@ -99,9 +88,10 @@ X-Nucleo-GFX01M2/
 ├── LICENSE
 ├── .gitignore
 └──X-Nucleo-GFX01M2.ioc
+```
 
 Keil users: be sure to add  
-`Drivers/Custom/ST7789/`  
+`Drivers/Custom/`  
 to the **include paths in uvision**
 
 ---
@@ -158,11 +148,17 @@ You are free to use, modify, and share.
 
 ---
 
-## Acknowledgements
-Thanks to the ST community, the X‑NUCLEO‑GFX01M2 hardware documentation,
-and the open‑source embedded graphics community
+## Contributions
+Pull requests and improvements are welcome.
 
 ---
+
+## Acknowledgements
+Thanks to the ST community, the X‑NUCLEO‑GFX01M2 hardware documentation,
+and the open‑source embedded graphics community.
+
+---
+
 
 
 
