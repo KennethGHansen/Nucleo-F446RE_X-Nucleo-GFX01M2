@@ -1,9 +1,9 @@
 
-# STM32F446RE + X-NUCLEO-GFX01M2 Display Driver (ST7789)
+# NUCLEO-F446RE + X-NUCLEO-GFX01M2 Display Driver (ST7789)
 
 This repository contains a working example project demonstrating how to drive the  
 **DT022CTFT (ST7789) TFT display module** using an **ST NUCLEO‑F446RE** and the  
-**X‑NUCLEO‑GFX01M2** display expansion board.
+**X‑NUCLEO‑GFX01M2** display expansion board. The NUCLEO-F446RE contains the STM32F446RE microcontroller
 
 It includes a fully working low-level driver (`st7789h2.c/h`) with:
 
@@ -151,6 +151,7 @@ Thanks to the ST community, the X‑NUCLEO‑GFX01M2 hardware documentation,
 and the open‑source embedded graphics community
 
 ---
+
 
 
 
