@@ -24,7 +24,7 @@ This project is written for **Keil uVision** but is compatible with STM32CubeIDE
 - **X‑NUCLEO‑GFX01M2** (display expansion adapter)
 - **DT022CTFT‑D01** display module (ST7789 controller)
 
-The display plugs into CN2/CN3 of the X‑NUCLEO‑GFX01M2 expansion board. But my experience was
+The X‑NUCLEO‑GFX01M2 expansion board plugs into the NUCLEO-F446RE board via the MORPHO connectors. But my experience was
 that when doing so, I could not get the debug interface working. So I did the wiring with jumper wires
 instead. The wiring is done on basis of the port setup i did in CubeMX:
 
@@ -151,6 +151,7 @@ Thanks to the ST community, the X‑NUCLEO‑GFX01M2 hardware documentation,
 and the open‑source embedded graphics community
 
 ---
+
 
 
 
