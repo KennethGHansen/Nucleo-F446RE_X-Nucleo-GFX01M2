@@ -81,8 +81,8 @@ X-Nucleo-GFX01M2/
 │       └── font5x7.h
 │
 ├── MDK-ARM/
-│   ├── MyProject.uvprojx
-│   ├── MyProject.uvoptx
+│   ├── X-Nucleo-GFX01M2.uvprojx
+│   ├──X-Nucleo-GFX01M2.uvoptx
 │
 ├── README.md
 ├── LICENSE
@@ -158,6 +158,7 @@ Thanks to the ST community, the X‑NUCLEO‑GFX01M2 hardware documentation,
 and the open‑source embedded graphics community.
 
 ---
+
 
 
 
